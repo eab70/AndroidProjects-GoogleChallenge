@@ -1,2 +1,2 @@
 # AndroidProjects-GoogleChallenge
-Apps created for Grow with Google Challenge
+Exercises completed and apps created for Grow with Google Challenge
