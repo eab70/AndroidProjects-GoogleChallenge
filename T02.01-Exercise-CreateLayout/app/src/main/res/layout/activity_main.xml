@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2016 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<!--Change the ConstraintLayout to a LinearLayout-->
+<!--Make the orientation vertical-->
+<!--Give left, right, and top padding of 16dp-->
+<!--Remove the line that declares the id, we don't need it-->
+<!--Remove the xmlns:app declaration, we don't need that anymore-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <!--Delete this TextView-->
+
+    <!--Add an EditText-->
+    <!--Give the EditText an id of @+id/et_search_box-->
+    <!--Set the text size to 22sp-->
+    <!--Set the width to match_parent and the height to wrap_content-->
+    <!--Provide a hint telling the user to enter a query and then click search-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_search_box"
+        android:textSize="22sp"
+        android:hint="Enter a query and click search" />
+
+    <!--Add a TextView-->
+    <!--Give the TextView an id of @+id/tv_url_display-->
+    <!--Set the text size to 22sp-->
+    <!--Set the width to wrap_content and the height to wrap_content-->
+    <!--Give the TextView a top margin of 8dp-->
+    <!--Set the text to tell the user their search URL will show up here when they click search-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_url_display"
+        android:text="URL will be displayed here after clicking the search button"
+        android:textSize="22sp" />
+
+    <!--Add ScrollView-->
+    <!--Set the width to match_parent and the height to wrap_content-->
+    <!--Set the top margin to 16dp-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" >
+
+        <!--Within the ScrollView, add a TextView-->
+        <!--Give the TextView an id of @+id/tv_github_search_results_json-->
+        <!--Set the text size to 18sp-->
+        <!--Set the height and width to wrap_content-->
+        <!--Set the text to something that tells the user to make a search-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_github_search_results_json"
+            android:text="Search here"
+            android:textSize="18sp"/>
+    </ScrollView>
+
+</LinearLayout>
