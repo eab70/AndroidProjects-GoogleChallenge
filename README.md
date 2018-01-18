@@ -1,2 +1,2 @@
 # AndroidProjects-GoogleChallenge
-Exercises completed and apps created for Grow with Google Challenge
+Exercise apps(folders starting with 'T') completed and Sunshine app (folders beginning with 'S') created for Grow with Google Challenge
