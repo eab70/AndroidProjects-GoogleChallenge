@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--order of the labels and values must be the same; i.e., red, blue green-->
+
+    <array name="pref_color_option_label">
+    <item>@string/pref_color_label_red</item>
+    <item>@string/pref_color_label_blue</item>
+    <item>@string/pref_color_label_green</item>
+    </array>
+    
+    <array name="pref_color_option_values">
+        <item>@string/pref_color_red_value</item>
+        <item>@string/pref_color_blue_value</item>
+        <item>@string/pref_color_green_value</item>
+    </array>
+    
+</resources>
